@@ -1,5 +1,6 @@
 import Swiper from 'swiper';
 import 'swiper/css';
+import './script.css';
 
 window.addEventListener('load', async () => {
   console.log('loaded');
@@ -24,7 +25,7 @@ const getJson = async (url) => {
 const swiperImageComponent = (image) => {
   return `
         <div class="swiper-slide">
-            <h2>${image.title}<h2>
+            <h2>${image.title}</h2>
             <image src="public/${image.url}">
         </div>
     `;
